@@ -1,0 +1,165 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Bu cüzdan sistemi yepyeni bir teknoloji tamamen güvenli olarak sizinledir">
+    <meta name="robots" content="bitcoin, wallet, coin, sanalpara, para">
+    <meta name="author" content="onderyilmaz">
+    
+    
+    <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+
+	<title>	CSS3 Grid Yapısı</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+
+<div class="container">
+
+	<div class="box box1"> 
+        <div class="header">
+            
+            <div class="headerChild logo"> 
+                <img src="{% static 'img/logo.png' %}" class="img-fluid">
+                
+            </div>
+                
+            <div class="headerChild socialIcon"> 
+                <a href="#" class="left"><i class="fa fa-youtube fa-2x"></i></a> 
+                <a href="#" class="left"><i class="fa fa-facebook fa-2x"></i></a> 
+                <a href="#" class="left"><i class="fa fa-twitter fa-2x"></i></a>
+            </div>
+            
+            
+            <div class="headerChild menu">         
+                <ul>
+                    <li><a href="{% url 'index' %}" class="main">Home</a></li>
+                    <li><a href="{% url 'bitcoin' %}">Wallet</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>   
+            </div>  
+            
+            
+        </div>    
+    
+    
+    </div>
+    
+	<div class="box box2"> 
+        <div class="box2Text">
+            <h5> Bitcoin (Örnek Tasarımdır) </h5>
+            <h3> What is Lorem Ipsum? </h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English..</p>
+            <a href="#" class="btn btn-info"> Details </a>
+    
+        </div>
+    </div>
+    
+    <div class="box box3"> 
+        <div class="box3Child">
+            <div class="box3Child1">
+                <h2 class="box3H2">
+                    <img class="imgDollar" src="../static/img/dollar.png">
+                </h2>
+                <h4 class="box3Title"> Doları sabitledik (Örnektir) </h4>
+                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+            </div>
+            <div class="box3Child2">
+                <h4 class="box3Title"> Euro sabitledik (Örnektir) </h4>
+                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p> 
+                <h2 class="box3H2">
+                <img class="imgEuro" src="../static/img/euro.png">
+                </h2>
+            </div>
+        </div>
+    
+    </div>  
+     
+	<div class="box box4">  
+        <div class="box4Child">
+            <div class="box4Child1">
+                <img src="../static/img/mobile.png" class="imgBox4">
+            </div>
+            <div class="box4Child2">
+                <h2 class="box3Title"> Mobil App Introduction </h2>
+                <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>                
+            </div>            
+        </div>
+    
+     </div>
+    
+    
+
+	<div class="box box5"> 
+            <div class="box5Child box5Child1">            
+                <div class="card " style="width: 14rem;">
+                  <img src="../static/img/person3.png" style="width: 10rem; margin-left: auto; margin-right: auto;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>  
+            </div>  
+            <div class="box5Child box5Child2">              
+                <div class="card " style="width: 14rem; ">
+                  <img src="../static/img/person3.png" style="width: 10rem; margin-left: auto; margin-right: auto;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>  
+            </div>                  
+            <div class="box5Child box5Child3">                  
+                <div class="card " style="width: 14rem;">
+                  <img src="../static/img/person3.png" style="width: 10rem; margin-left: auto; margin-right: auto;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+            </div>                  
+            <div class="box5Child box5Child4">                  
+                <div class="card " style="width: 14rem; ">
+                  <img src="../static/img/person3.png" style="width: 10rem; margin-left: auto; margin-right: auto;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>         
+                </div>  
+        </div>	
+    </div>  
+    
+	<div class="box box6"> 
+        <div class="box6Child">
+            <div class="box6Child1">
+                <h2 class="box6Title"> Contact </h2>
+                <p> 
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p>
+                <p>
+                  +123 456789
+                </p>
+            </div>          
+            <div class="box6Child2">
+                <h2 class="box6Title"> Why do we use it?</h2>
+                <p> 
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p>                
+            </div>         
+        </div>
+    </div>
+
+
+   
+</div>
+	
+</body>
+</html>

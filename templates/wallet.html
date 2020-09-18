@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Bu cüzdan sistemi yepyeni bir teknoloji tamamen güvenli olarak sizinledir">
+    <meta name="robots" content="bitcoin, wallet, coin, sanalpara, para">
+    <meta name="author" content="onderyilmaz">
+    
+    
+    <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+
+	<title>	CSS3 Grid Yapısı</title>
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="../static/css/style2.css">
+    
+</head>
+<body>
+
+
+<div class="container">
+
+	<h1 style="text-align: center; color: #4a3e9f; margin-top: 3rem;">Hello Hypetia</h1>
+
+	<div class="box box1"> 
+        <div class="header">
+            
+            <div class="headerChild logo"> 
+                <img src="{% static 'img/logo.png' %}" class="img-fluid">
+                
+            </div>
+                
+            <div class="headerChild socialIcon"> 
+                <a href="#" class="left"><i class="fa fa-youtube fa-2x"></i></a> 
+                <a href="#" class="left"><i class="fa fa-facebook fa-2x"></i></a> 
+                <a href="#" class="left"><i class="fa fa-twitter fa-2x"></i></a>
+            </div>
+            
+            
+            <div class="headerChild menu">         
+                <ul>
+                    <li><a href="{% url 'index' %}" class="main">Home</a></li>
+                    <li><a href="{% url 'bitcoin' %}">Wallet</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>   
+            </div>  
+            
+            
+        </div>    
+    
+    
+    </div>
+       
+    
+    
+    <div class="box7"> 
+            <div class="box7Child box7Child1">
+
+            <p>https://block.io/api/simple/python</p>
+                <h1>secret key goztepe35</h1>
+
+                <h2>bitcoin adres 2N83HgQofrMHcUecN4dLozoVv1wAErrwwqU</h2>
+                <h3>API KEY 00c6-f206-7e73-bf39 </h3>
+
+            {{ data }}
+                <br>
+
+             <p> Network  : {{data.data.network}}</p>
+            <p> Available Balance  : {{data.data.available_balance}}</p>
+            <p> Pending Received Balance  : {{data.data.pending_received_balance}}</p>
+                <br>
+
+            {{data2}}
+                <br>
+
+            {% for foo in data2.data.balances %}
+            <p>User ID : {{foo.user_id}} </p>
+            <p> Label : {{foo.label}}</p>
+            <p> Address: {{foo.address}}</p>
+            <p> Available Balance :{{foo.available_balance}}</p>
+            <p> Pending Received Balance : {{foo.pending_received_balance}}</p>
+            {% endfor %}
+                <br>
+            </div>          
+            <div class="box7Child box7Child2">
+
+            </div>         
+    </div>
+    
+</div>
+	
+</body>
+</html>

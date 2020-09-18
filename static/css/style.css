@@ -1,0 +1,628 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.container {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+
+
+.box {
+	text-align: center;
+    max-height: 1500px;
+    padding: 15px;
+}
+
+
+.box1 {
+
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+.logo .img-fluid {
+    width: 30%;
+    margin: 1rem 1rem;
+    float: left;
+}
+.socialIcon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+    padding: 1rem;   
+    
+}
+.socialIcon a {
+    margin: 1rem 1rem;
+    color: lightblue;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+}
+.menu ul li {
+    margin: 1rem;
+}
+.menu ul li a{
+    background: gray;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.5rem;
+    /* Alt çizgi kaldırmak istenirse */
+    text-decoration: none;
+    font-family: 'Permamnent Marker', cursive;
+}
+.menu ul li a:hover{
+     color: #000000;
+}
+.menu ul li a.main{
+    background: red;
+    
+}
+
+
+
+.box2 {
+    background: url('/static/img/introSlider.jpg') no-repeat center center/cover ;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.box2Text h5 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.box2Text h3 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.box2Text p {
+    color: #000;
+    font-weight: bold;
+}
+.box2Text a {
+    color: #000;
+}
+
+
+.box3 {
+    
+}
+.box3Child {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 250px;
+}
+.box3Child1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;     
+}
+.box3Child1 h2 {
+    font-size: 2.5rem;
+    border-radius: 20rem;
+    width: 99%;
+    margin: auto auto;
+    background: lightgray;
+
+    
+}
+.box3Child2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;     
+}
+.box3Child2 h2 {
+    font-size: 2.5rem;
+    border-radius: 50rem;
+    width: 99%;
+    margin: auto auto;
+    background: lightgreen;
+
+    
+}
+
+
+.imgDollar {
+    width: 40%;
+}
+.imgEuro {
+    width: 40%;
+
+}
+
+
+.box4 {
+	background-color: #E0E0E0;
+}
+.imgBox4 {
+    width: 40%;
+}
+.box4Child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.box4Child2 h2 {
+    font-size: 2rem;
+    width: 50%;
+    margin: auto auto;
+    background: 606060;
+    opacity: .5;
+    margin-bottom: 2rem;
+}
+.box4Child2 p {
+    font-size: 1rem;
+    margin: auto auto;
+    
+}
+
+
+
+.box5 {
+	background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box5Child {
+    flex-direction: row;
+}
+.box5Child1{
+    width: 25%;
+}
+.box5Child2{
+    width: 25%;
+}
+.box5Child3{
+    width: 25%;
+}
+.box5Child4{
+    width: 25%;
+}
+
+
+
+
+.box6 {
+	background-color: #A0A0A0;
+}
+.box6Child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;    
+}
+.box6Child1 h2 {
+    width: 80%;
+}
+.box6Child1 p {
+    width: 80%;
+    
+}
+.box6Child2 h2 {
+    width: 80%;
+}
+.box6Child2 p {
+    width: 80%;
+    
+}
+
+/*
+
+@media (max-width: 760px) {
+	.blogs {
+		flex-direction: column;
+	}
+}
+
+*/
+
+/*
+
+// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+*/
+
+/*// Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+	.header {
+        flex-direction: column;
+	}
+
+    .logo .img-fluid {
+        width: 30%;
+        float: none;
+    }
+    
+/* Box3 için Ayarlar  */
+    .box3Child {
+        flex-direction: column;
+    
+    }
+    .box3Child1 {
+        margin: 1rem;
+    }
+    .box3Child2 {
+        margin: 1rem;
+    }    
+    .box3Child1 h2 {
+        font-size: 2.5rem;
+        border-radius: 12rem;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        background: lightgray;
+ 
+        
+    }
+    .box3Child2 h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+        border-radius: 50rem;
+        width: 50%;
+        background: lightgreen;
+
+    }
+     .box3Child1 h4 {
+        font-size: 1.5rem;
+        width: 50%;
+        margin-left: 1rem; 
+        
+    }
+    .box3Child2 h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        width: 30%;
+
+    }   
+     .box3Child1 p {
+        font-size: 1rem;
+        margin-left: .4rem; 
+        text-align: left;
+        
+    }
+    .box3Child2 p {
+        font-size: 1rem;
+        margin-left: .4rem; 
+        text-align: left;
+    }   
+
+    
+       
+    
+ /* Box4 için Ayarlar  */
+    .box4 {
+        background-color: #E0E0E0;
+    }    
+    .box4Child {
+        flex-direction: column;
+    }
+    .imgBox4 {
+        width: 22%;
+        margin-bottom: 1rem;
+    }
+    .box4Child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+    }
+    .box4Child2 h2 {
+        font-size: 2rem;
+        width: 50%;
+        margin: auto auto;
+        background: 606060;
+        opacity: .5;
+        margin-bottom: 2rem;
+    }
+    .box4Child2 p {
+        font-size: 1rem;
+        margin: auto auto;
+
+    }        
+    
+    
+    
+    .box5 {
+        background-color: #202020;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        flex-wrap: wrap;
+    }   
+    .box5Child {
+        flex-direction: column;
+        
+    }
+     
+
+    .box5Child1 {
+        width: 40%;
+    }
+    .box5Child2{
+        width: 40%;
+    }
+    .box5Child3{
+        width: 40%;
+    }
+    .box5Child4{
+        width: 40%;
+    }
+
+    
+    
+    
+    
+ /* Box6 için Ayarlar  */    
+    .box6Child {
+        flex-direction: column;
+    }    
+    .box6 {
+        background-color: #A0A0A0;
+
+    }
+    .box6Child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;    
+    }
+    .box6Child1 h2 {
+        width: 100%;
+    }
+    .box6Child1 p {
+        width: 100%;
+
+    }
+    .box6Child2 h2 {
+        width: 100%;
+    }
+    .box6Child2 p {
+        width: 100%;
+
+    }
+    
+  
+}
+
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+	.header {
+        flex-direction: column;
+	}
+
+    .logo .img-fluid {
+        width: 30%;
+        float: none;
+        
+    }
+    .box3Child {
+        flex-direction: column;
+    
+    }
+    .box3Child1 {
+        margin: 1rem;
+    }
+    .box3Child2 {
+        margin: 1rem;
+    }    
+    .box3Child1 h2 {
+        font-size: 2.5rem;
+        border-radius: 12rem;
+        width: 500%;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .box3Child2 h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+        width: 80%;
+
+    }
+     .box3Child1 h4 {
+        margin: 0;
+        padding: 0;         
+        font-size: 1rem;
+        width: 500%;
+        margin-left: 1rem; 
+        text-align: left;
+        
+    }
+    .box3Child2 h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        width: 90%;
+        text-align: left;
+        
+
+    }   
+     .box3Child1 p {
+        margin: 0;
+        padding: 0;         
+        font-size: .81rem;
+        width: 800%;
+        margin-left: .4rem; 
+        text-align: left;
+        
+    }
+    .box3Child2 p {
+        margin: 0;
+        padding: 0;         
+        font-size: .5rem;
+        width: 50%;
+        margin-left: .4rem; 
+        text-align: left;
+
+    }   
+
+    
+    .box4Child {
+        flex-direction: column;
+    }
+
+    
+    
+    
+    .box5 {
+        background-color: #202020;
+    }    
+    .box5Child {
+        flex-direction: column;
+    }
+    .box5Child1 {
+        width: 50%;
+    }
+    .box5Child2{
+        width: 50%;
+    }
+    .box5Child3{
+        width: 50%;
+    }
+    .box5Child4{
+        width: 50%;
+    }
+
+    
+    .box6Child {
+        flex-direction: column;
+    }    
+        
+}
+
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+	.header {
+        flex-direction: column;
+	}
+
+    .logo .img-fluid {
+        width: 30%;
+        float: none;
+        
+    }
+    .box3Child {
+        flex-direction: column;
+    
+    }
+    .box3Child1 {
+        margin: rem;
+    }
+    .box3Child2 {
+        margin: 1rem;
+    }    
+    .box3Child1 h2 {
+        font-size: 2.5rem;
+        border-radius: 12rem;
+        width: 500%;
+        margin: 0;
+        padding: 0;
+        background: lightgray;
+        
+        
+    }
+    .box3Child2 h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+        width: 80%;
+        background: lightgreen;
+
+    }
+     .box3Child1 h4 {
+        margin: 0;
+        padding: 0;         
+        font-size: 1rem;
+        width: 500%;
+        margin-left: 1rem; 
+        text-align: left;
+        
+    }
+    .box3Child2 h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        width: 90%;
+        text-align: left;
+        
+
+    }   
+     .box3Child1 p {
+        margin: 0;
+        padding: 0;         
+        font-size: .81rem;
+        width: 800%;
+        margin-left: .4rem; 
+        text-align: left;
+        
+    }
+    .box3Child2 p {
+        margin: 0;
+        padding: 0;         
+        font-size: .5rem;
+        width: 50%;
+        margin-left: .4rem; 
+        text-align: left;
+
+    }   
+
+    
+    .box4Child {
+        flex-direction: column;
+    }
+    
+    .box5 {
+        background-color: #202020;
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        flex-wrap: wrap;
+    }   
+    .box5Child {
+        flex-direction: row;
+        
+    }
+
+    .box5Child1 {
+        width: 60%;
+    }
+    .box5Child2{
+        width: 60%;
+    }
+    .box5Child3{
+        width: 60%;
+    }
+    .box5Child4{
+        width: 60%;
+    }
+
+    
+    
+    .box6Child {
+        flex-direction: column;
+    }    
+        
+}
